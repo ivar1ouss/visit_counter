@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}Главная{% endblock %}
+
+{% block content %}
+    <h1>Добро пожаловать</h1>
+
+    <div class="counter-box">
+        <p>Вы зашли на эту страницу:</p>
+        <div class="counter-number">{{ visits }}</div>
+        <p>раз(а).</p>
+    </div>
+
+    <div class="buttons">
+        <a href="/" class="btn btn-refresh">Обновить страницу</a>
+        <a href="/reset" class="btn btn-reset">Сбросить счётчик</a>
+    </div>
+{% endblock %}
